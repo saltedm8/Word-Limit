@@ -50,6 +50,6 @@ class Word_limit {
 
 		$str = ($str == '') ? ee()->TMPL->tagdata : $str;
 
- 		$this->return_data = ee()->functions->word_limiter($str, $total);
+ 		$this->return_data = ee()->functions->word_limiter($str, $total).'</p>';
 	}
 }
